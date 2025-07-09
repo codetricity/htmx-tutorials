@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/htmx-ext-sse@2.2.2"  crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <title>Jinja Streaming Tutorial</title>
+</head>
+<body class="prose p-4">
+    <h1>Jinja will Stream</h1>
+    <p>let's do this.</p>
+    <div
+        id="progress-content"
+        hx-ext="sse"
+        sse-connect="/progress"
+        sse-swap="message"
+        >
+    </div>
+</body>
+</html>
