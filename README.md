@@ -16,9 +16,18 @@ This tutorial series challenges conventional web development approaches by focus
 
 - **Simpler Development**: No need for complex build tools, bundlers, or state management
 - **Better Performance**: Smaller JavaScript bundles, faster initial page loads
-- **SEO Friendly**: Server-rendered HTML is immediately crawlable
+- **SEO & AI Friendly**: Server-rendered HTML is immediately crawlable by search engines and readable by LLMs
 - **Progressive Enhancement**: Works without JavaScript, enhanced with HTMX
 - **Developer Experience**: Single codebase, familiar Python ecosystem
+
+### AI/LLM Compatibility
+
+This server-side rendering approach is particularly beneficial for AI and LLM consumption:
+
+- **Structured Content**: Clean HTML markup provides clear content structure for LLMs
+- **No JavaScript Dependencies**: Content is immediately available without client-side execution
+- **Semantic HTML**: Proper HTML semantics help LLMs understand content hierarchy
+- **Accessible by Design**: Content that works without JavaScript is inherently more accessible to AI systems
 
 ## 🛠️ Technology Stack
 
