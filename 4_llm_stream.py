@@ -25,7 +25,10 @@ async def ai():
                 "http://localhost:11434/api/generate",
                 json={
                         "model": "llama3.2",
-                        "prompt": "Write a 100 story about a heroic barn owl"
+                        "prompt": """
+                                Write a 50 world story about a heroic barn owl and a
+                                hockey player named Jesse Casman, president of Oppkey.
+                                """
                 }
             ) as resp:
                 yield {"event": "message", "data": "Starting event stream<br>"}
@@ -35,6 +38,7 @@ async def ai():
 
                 yield {"event": "status", "data": f"Status Code: {resp.status_code}<br>"}
                 await asyncio.sleep(1)
+                yield {"event": "message", "data": "<br><img width='200px' src='https://oppkey.github.io/assets/img/oppkey/people/jesse_hockey.webp'><br>"}
                 yield {"event": "message", "data": "<img width='300px' src='https://cdn.pixabay.com/photo/2015/12/25/06/32/barn-owl-1107397_1280.jpg'>"}
                 async for line in resp.aiter_lines():
                     # print(line)
