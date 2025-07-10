@@ -34,7 +34,7 @@ This server-side rendering approach is particularly beneficial for AI and LLM co
 ### Core Technologies
 
 - **[HTMX](https://htmx.org/)**: Controversial architecture that replaces JavaScript-heavy frontends with server-side HTML updates
-- **[FastAPI](https://fastapi.tiangolo.com/)**: Modern Python web framework for building APIs and serving HTML
+- **[FastAPI](https://fastapi.tiangolo.com/)**: Modern Python web framework with async-first design, making asynchronous development more straightforward compared to Django's synchronous origins.
 - **[SSE (Server-Sent Events)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)**: Real-time updates using `sse_starlette`
 - **[Ollama](https://ollama.ai/)**: Local LLM integration with streaming responses
 
@@ -131,6 +131,10 @@ This is an educational project. Feel free to:
 ## 📄 License
 
 This project is for educational purposes. Feel free to use the code and concepts in your own projects.
+
+## Oppkey Notes
+
+- [Django vs FastAPI](docs/djangjo-vs-fastapi.md)
 
 ---
 
